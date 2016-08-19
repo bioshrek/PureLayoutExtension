@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		11B04ED91D66E1C900F707ED /* PureLayoutExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11B04ED81D66E1C900F707ED /* PureLayoutExtension.h */; };
-		11B04EDB1D66E1C900F707ED /* PureLayoutExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B04EDA1D66E1C900F707ED /* PureLayoutExtension.m */; };
+		11B04EE31D66EBD500F707ED /* NSArray+HW_PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B04EE21D66EBD500F707ED /* NSArray+HW_PureLayout.m */; };
+		11B04EE61D66EBDF00F707ED /* UIView+HW_PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B04EE51D66EBDF00F707ED /* UIView+HW_PureLayout.m */; };
+		3AC40CEC1AB536B866BD3526 /* libPods-PureLayoutExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A440B5F4FB28A12C091D62D /* libPods-PureLayoutExtension.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +29,13 @@
 /* Begin PBXFileReference section */
 		11B04ED51D66E1C900F707ED /* libPureLayoutExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPureLayoutExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B04ED81D66E1C900F707ED /* PureLayoutExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PureLayoutExtension.h; sourceTree = "<group>"; };
-		11B04EDA1D66E1C900F707ED /* PureLayoutExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PureLayoutExtension.m; sourceTree = "<group>"; };
+		11B04EE11D66EBD500F707ED /* NSArray+HW_PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HW_PureLayout.h"; sourceTree = "<group>"; };
+		11B04EE21D66EBD500F707ED /* NSArray+HW_PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HW_PureLayout.m"; sourceTree = "<group>"; };
+		11B04EE41D66EBDF00F707ED /* UIView+HW_PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HW_PureLayout.h"; sourceTree = "<group>"; };
+		11B04EE51D66EBDF00F707ED /* UIView+HW_PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HW_PureLayout.m"; sourceTree = "<group>"; };
+		3A440B5F4FB28A12C091D62D /* libPods-PureLayoutExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PureLayoutExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B5B191D43D6B8775186DC4 /* Pods-PureLayoutExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureLayoutExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-PureLayoutExtension/Pods-PureLayoutExtension.release.xcconfig"; sourceTree = "<group>"; };
+		F26015D14774849C84CF537B /* Pods-PureLayoutExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureLayoutExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PureLayoutExtension/Pods-PureLayoutExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC40CEC1AB536B866BD3526 /* libPods-PureLayoutExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +55,8 @@
 			children = (
 				11B04ED71D66E1C900F707ED /* PureLayoutExtension */,
 				11B04ED61D66E1C900F707ED /* Products */,
+				9EEA4B2E3BA6E48845C4AEA6 /* Pods */,
+				BF310499EDA25AF8895BADD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,9 +72,29 @@
 			isa = PBXGroup;
 			children = (
 				11B04ED81D66E1C900F707ED /* PureLayoutExtension.h */,
-				11B04EDA1D66E1C900F707ED /* PureLayoutExtension.m */,
+				11B04EE11D66EBD500F707ED /* NSArray+HW_PureLayout.h */,
+				11B04EE21D66EBD500F707ED /* NSArray+HW_PureLayout.m */,
+				11B04EE41D66EBDF00F707ED /* UIView+HW_PureLayout.h */,
+				11B04EE51D66EBDF00F707ED /* UIView+HW_PureLayout.m */,
 			);
 			path = PureLayoutExtension;
+			sourceTree = "<group>";
+		};
+		9EEA4B2E3BA6E48845C4AEA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F26015D14774849C84CF537B /* Pods-PureLayoutExtension.debug.xcconfig */,
+				B5B5B191D43D6B8775186DC4 /* Pods-PureLayoutExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF310499EDA25AF8895BADD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A440B5F4FB28A12C091D62D /* libPods-PureLayoutExtension.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11B04EDE1D66E1C900F707ED /* Build configuration list for PBXNativeTarget "PureLayoutExtension" */;
 			buildPhases = (
+				FB7553BAD6E1761014F27340 /* [CP] Check Pods Manifest.lock */,
 				11B04ED11D66E1C900F707ED /* Sources */,
 				11B04ED21D66E1C900F707ED /* Frameworks */,
 				11B04ED31D66E1C900F707ED /* CopyFiles */,
+				DCAA6B8CB5B3EC6F0CE1D6F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -117,12 +150,46 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DCAA6B8CB5B3EC6F0CE1D6F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PureLayoutExtension/Pods-PureLayoutExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB7553BAD6E1761014F27340 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11B04ED11D66E1C900F707ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11B04EDB1D66E1C900F707ED /* PureLayoutExtension.m in Sources */,
+				11B04EE31D66EBD500F707ED /* NSArray+HW_PureLayout.m in Sources */,
+				11B04EE61D66EBDF00F707ED /* UIView+HW_PureLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +280,7 @@
 		};
 		11B04EDF1D66E1C900F707ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F26015D14774849C84CF537B /* Pods-PureLayoutExtension.debug.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -222,6 +290,7 @@
 		};
 		11B04EE01D66E1C900F707ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B5B191D43D6B8775186DC4 /* Pods-PureLayoutExtension.release.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -248,6 +317,7 @@
 				11B04EE01D66E1C900F707ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
